@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gLpzVU71D6Ymbh+BorgpFa+94l/rQwV4im7ne6Fx4Kj5nVSWP0Vk7WIaNbGVJShLl3n1p/+4M495CwwiaLrt3w==",
+  "success": true,
+  "projectFilePath": "D:\\ASS\\Code\\calendar\\qbcal\\qbcal.Server\\qbcal.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Blake\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.2\\microsoft.aspnetcore.spaproxy.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

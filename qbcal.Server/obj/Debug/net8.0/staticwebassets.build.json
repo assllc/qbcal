@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "Vv6r7yYluy7mwtyCnpGNqRPm5aa4x2qAtH7jfFWEvyY=",
+  "Source": "qbcal.Server",
+  "BasePath": "_content/qbcal.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\ASS\\Code\\calendar\\qbcal\\qbcal.client\\qbcal.client.esproj",
+      "Version": 2,
+      "Source": "qbcal.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
