@@ -13,6 +13,9 @@ using qbcal.Common;
 using qbcal.Application;
 using qbcal.DataAccess;
 using Microsoft.EntityFrameworkCore;
+using FluentMigrator.Runner;
+using FluentMigrator.Runner.Initialization;
+using qbcal.Application.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -107,7 +110,6 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -120,6 +122,11 @@ if (!app.Environment.IsDevelopment())
       .AllowCredentials()); // allow credentials
     app.UseHttpsRedirection();
     IdentityModelEventSource.ShowPII = true;
+    var migrationService = app.Services.GetService<IMigrationService>();
+    if (migrationService != null && connectionString != null)
+    {
+        migrationService.RunDbMigrations(connectionString);
+    }
 }
 
 app.UseSwagger();

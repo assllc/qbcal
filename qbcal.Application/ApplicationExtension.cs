@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using qbcal.Application.Interfaces;
+using qbcal.Application.Services;
 
 namespace qbcal.Application
 {
@@ -7,7 +9,7 @@ namespace qbcal.Application
         // di services
         public static void AddApplicationServices(this IServiceCollection services)
         {
-
+            services.AddSingleton<IMigrationService, MigrationService>();
         }
     }
 }
